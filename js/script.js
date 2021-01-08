@@ -6,9 +6,15 @@ $(document).ready(function(){
   $('.nav i').click(function(){
     $('.nav i.active').removeClass('active');
     $(this).addClass('active');
-    $('.images img').eq($(this).index());
+    $('.images img').removeClass('active');
+      $('.images img').eq($(this).index()).addClass('active');
 
-  });
+    
+    
+  }
+ 
+  
+  );
   
 
 });
